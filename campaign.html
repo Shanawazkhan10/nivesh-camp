@@ -1,0 +1,1314 @@
+<div id="registernow"></div>
+
+<style>
+  [data-widget-type="LpInputReact"] {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-column-gap: 1em;
+    grid-auto-columns: auto;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* Column that takes up 6 out of 12 equal parts (50%) */
+  .col-6 {
+    flex: 0 0 50%; /* 50% width */
+    padding: 10px; /* Optional padding */
+    box-sizing: border-box; /* Ensure padding does not affect width */
+  }
+</style>
+
+<script>
+  function SendWelcomeMail(email) {
+    var myHeaders = new Headers();
+    myHeaders.append("mmApiKey", "TATPNVJ-CA2M859-GD8JG55-AX18V60");
+    myHeaders.append("Content-Type", "application/json");
+
+    var raw = JSON.stringify({
+      subject: "Welcome to Nivesh.com",
+      email: email,
+    });
+
+    var requestOptions = {
+      method: "POST",
+      headers: myHeaders,
+      body: raw,
+      redirect: "follow",
+    };
+
+    fetch(
+      "https://api.mailmodo.com/api/v1/triggerCampaign/ce43293f-89cf-4470-8d59-aa55ed062063",
+      requestOptions
+    )
+      .then((response) => response.text())
+      .then((result) => console.log(result))
+      .catch((error) => console.log("error", error));
+  }
+</script>
+<div>
+  <!-- <div class="nivesh-logo"><img src="https://webassets.nivesh.com/Content/images/logo-transparent.png" alt="logo"/></div> -->
+  <div class="nivesh-logo"><img src="https://webassets.nivesh.com/Content/images/logo-transparent.png" alt="logo"/></div>
+<div class="row">
+  <div class="col-6">Test</div>
+  <div class="col-6">
+    <div class="composite flex__item--md-12 flex__item--xs-12 css-8x0d4x">
+      <div>
+        <form
+          action=""
+          data-backup-host="https://optin-snf-dot-lead-pages.appspot.com"
+          data-form-version="2"
+          method="POST"
+          accept-charset="UTF-8"
+          target="_top"
+        >
+          <div class="widget-column flex__item--md-12 flex__item--xs-12">
+            <div class="widget-row flex flex--12">
+              <div class="flex__item--md-12 flex__item--xs-12">
+                <div
+                  data-widget-id="406c2845-cebe-0298-9b52-3fab2a01f711"
+                  class="widget"
+                >
+                  <style data-emotion-css="1xzxck5">
+                    .css-1xzxck5 .confirm-existence {
+                      display: none;
+                    }
+                    .css-1xzxck5 .error-prompt {
+                      -webkit-align-items: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      border: 1px solid #4c515d;
+                      border-radius: 3px;
+                      color: #4c515d;
+                      display: none;
+                      margin-bottom: 12px;
+                      padding: 18px;
+                    }
+                    .css-1xzxck5 .error-prompt .error-prompt__icon {
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-align-items: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                      -webkit-flex: 0 0 48px;
+                      -ms-flex: 0 0 48px;
+                      flex: 0 0 48px;
+                    }
+                    .css-1xzxck5
+                      .error-prompt
+                      .error-prompt__icon
+                      .disabled-checkout {
+                      height: 30px;
+                      width: 48px;
+                    }
+                    .css-1xzxck5 .error-prompt .error-prompt__details {
+                      margin-left: 12px;
+                    }
+                    .css-1xzxck5
+                      .error-prompt
+                      .error-prompt__details
+                      .error-title {
+                      color: inherit;
+                      font-weight: 700;
+                    }
+                    .css-1xzxck5
+                      .error-prompt
+                      .error-prompt__details
+                      .error-description {
+                      color: inherit;
+                    }
+                    .css-1xzxck5 .error-prompt.error-prompt--invalid {
+                      color: #fa3246;
+                      border-color: #fa3246;
+                      background-color: #fee0e3;
+                    }
+                    .css-1xzxck5
+                      .error-prompt.error-prompt--invalid
+                      .error-prompt__icon {
+                      -webkit-flex-basis: 16px;
+                      -ms-flex-preferred-size: 16px;
+                      flex-basis: 16px;
+                    }
+                    .css-1xzxck5
+                      .error-prompt.error-prompt--invalid
+                      .error-prompt__icon
+                      .error-line {
+                      width: 16px;
+                      height: 16px;
+                    }
+                    .css-1xzxck5
+                      .error-prompt.error-prompt--invalid
+                      .error-prompt__icon
+                      .error-line
+                      path {
+                      fill: #fa3246;
+                    }
+                    .css-1xzxck5 .cc-input-container {
+                      position: relative;
+                    }
+                    .css-1xzxck5 .cc-input-container .fa-lock,
+                    .css-1xzxck5 .cc-input-container .cc-icons {
+                      position: absolute;
+                      top: 50%;
+                      -webkit-transform: translateY(-50%);
+                      -ms-transform: translateY(-50%);
+                      transform: translateY(-50%);
+                    }
+                    .css-1xzxck5 .cc-input-container .fa-lock {
+                      color: #4c515d;
+                      left: 0.5em;
+                    }
+                    .css-1xzxck5 .cc-input-container .cc-icons {
+                      right: 0.5em;
+                    }
+                    .css-1xzxck5 .cc-input-container .cc-icons .cc-icons__svg {
+                      display: inline-block;
+                      width: 100%;
+                      max-width: 1.5em;
+                      /* float: right; */
+                      margin-right: 0.5em;
+                      opacity: 0.5;
+                      -webkit-transition: opacity 0.2s ease, max-width 0.3s ease,
+                        margin 0.3s ease;
+                      transition: opacity 0.2s ease, max-width 0.3s ease,
+                        margin 0.3s ease;
+                    }
+                    .css-1xzxck5
+                      .cc-input-container
+                      .cc-icons
+                      .cc-icons__svg:first-of-type {
+                      margin-right: 0;
+                    }
+                    .css-1xzxck5
+                      .cc-input-container
+                      .cc-icons.americanexpress-card-match
+                      svg {
+                      margin-right: 0;
+                    }
+                    .css-1xzxck5
+                      .cc-input-container
+                      .cc-icons.americanexpress-card-match
+                      svg:not(.cc-icons__svg--americanexpress) {
+                      max-width: 0;
+                      opacity: 0;
+                    }
+                    .css-1xzxck5
+                      .cc-input-container
+                      .cc-icons.americanexpress-card-match
+                      .cc-icons__svg--americanexpress {
+                      opacity: 1;
+                    }
+                    .css-1xzxck5
+                      .cc-input-container
+                      .cc-icons.discover-card-match
+                      svg {
+                      margin-right: 0;
+                    }
+                    .css-1xzxck5
+                      .cc-input-container
+                      .cc-icons.discover-card-match
+                      svg:not(.cc-icons__svg--discover) {
+                      max-width: 0;
+                      opacity: 0;
+                    }
+                    .css-1xzxck5
+                      .cc-input-container
+                      .cc-icons.discover-card-match
+                      .cc-icons__svg--discover {
+                      opacity: 1;
+                    }
+                    .css-1xzxck5
+                      .cc-input-container
+                      .cc-icons.mastercard-card-match
+                      svg {
+                      margin-right: 0;
+                    }
+                    .css-1xzxck5
+                      .cc-input-container
+                      .cc-icons.mastercard-card-match
+                      svg:not(.cc-icons__svg--mastercard) {
+                      max-width: 0;
+                      opacity: 0;
+                    }
+                    .css-1xzxck5
+                      .cc-input-container
+                      .cc-icons.mastercard-card-match
+                      .cc-icons__svg--mastercard {
+                      opacity: 1;
+                    }
+                    .css-1xzxck5
+                      .cc-input-container
+                      .cc-icons.visa-card-match
+                      svg {
+                      margin-right: 0;
+                    }
+                    .css-1xzxck5
+                      .cc-input-container
+                      .cc-icons.visa-card-match
+                      svg:not(.cc-icons__svg--visa) {
+                      max-width: 0;
+                      opacity: 0;
+                    }
+                    .css-1xzxck5
+                      .cc-input-container
+                      .cc-icons.visa-card-match
+                      .cc-icons__svg--visa {
+                      opacity: 1;
+                    }
+                    .css-1xzxck5 .cc-input-container .lp-form-react__input {
+                      padding-left: 1.5em;
+                    }
+                    .css-1xzxck5 .form-field {
+                      margin-bottom: 12px;
+                    }
+                    .css-1xzxck5 .form-field.last-visible {
+                      margin-bottom: 0;
+                    }
+                    .css-1xzxck5 .form-field.input-hidden {
+                      display: none;
+                    }
+                    .css-1xzxck5
+                      .lp-form-field
+                      .lp-form-field__field-block-title {
+                      font-weight: 700;
+                    }
+                    .css-1xzxck5 .lp-form-react__group {
+                      width: 100%;
+                    }
+                    .css-1xzxck5 .lp-form-react__group.is-success {
+                      -webkit-animation: animation-1dcx35r 1s;
+                      animation: animation-1dcx35r 1s;
+                    }
+                    .css-1xzxck5 .lp-form-react__group.js-required {
+                      margin-bottom: 12px;
+                    }
+                    .css-1xzxck5
+                      .lp-form-react__group.js-required
+                      .lp-form-react__input {
+                      border: 1px solid #fa3246;
+                      box-shadow: #fa3246 0 0 1.5px 1px;
+                    }
+                    .css-1xzxck5
+                      .lp-form-react__group.js-required
+                      .lp-form-react__error--required {
+                      opacity: 1;
+                      height: auto;
+                      margin-top: 6px;
+                    }
+                    .css-1xzxck5
+                      .lp-form-react__group.js-invalid
+                      .lp-form-react__input {
+                      border: 1px solid #fa3246;
+                      box-shadow: #fa3246 0 0 1.5px 1px;
+                    }
+                    .css-1xzxck5
+                      .lp-form-react__group.js-invalid
+                      .lp-form-react__error--invalid {
+                      opacity: 1;
+                      height: auto;
+                      margin-top: 6px;
+                    }
+                    .css-1xzxck5 .lp-form-react__label {
+                      -webkit-flex: 0 0 100%;
+                      -ms-flex: 0 0 100%;
+                      flex: 0 0 100%;
+                    }
+                    .css-1xzxck5 .lp-form-react__input {
+                      display: block;
+                      width: 100%;
+                      height: 2em;
+                      margin: 0;
+                      padding: 0 0.5em;
+                      line-height: inherit;
+                      border-radius: 3px;
+                      -webkit-transition: border-color 200ms ease;
+                      transition: border-color 200ms ease;
+                    }
+                    .css-1xzxck5 .lp-form-react__textarea {
+                      padding: 0.5em;
+                      height: auto;
+                      resize: none;
+                    }
+                    .css-1xzxck5 .lp-form-react__error {
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-align-items: baseline;
+                      -webkit-box-align: baseline;
+                      -ms-flex-align: baseline;
+                      align-items: baseline;
+                      width: 100%;
+                      font-size: 0.75em;
+                      text-align: left;
+                      color: #fa3246;
+                      font-weight: 400;
+                      -webkit-text-decoration: none;
+                      text-decoration: none;
+                      font-style: normal;
+                      margin: 0;
+                      height: 0;
+                      opacity: 0;
+                      overflow: hidden;
+                      -webkit-transition: all 200ms ease;
+                      transition: all 200ms ease;
+                    }
+                    .css-1xzxck5 .lp-form-react__error i {
+                      margin-right: 6px;
+                    }
+                    .css-1xzxck5 .lp-form-react-radio-container,
+                    .css-1xzxck5 .lp-form-react-checkbox-container {
+                      line-height: 1;
+                      margin-bottom: 6px;
+                      -webkit-flex: 0 0 100%;
+                      -ms-flex: 0 0 100%;
+                      flex: 0 0 100%;
+                      width: 100%;
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-align-items: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                    }
+                    .css-1xzxck5 .lp-form-react-radio-container:first-of-type,
+                    .css-1xzxck5
+                      .lp-form-react-checkbox-container:first-of-type {
+                      margin-top: 6px;
+                    }
+                    .css-1xzxck5 .lp-form-react-radio-container:last-of-type,
+                    .css-1xzxck5
+                      .lp-form-react-checkbox-container:last-of-type {
+                      margin-bottom: 12px;
+                    }
+                    .css-1xzxck5 input[type="radio"].lp-form-react-radio {
+                      opacity: 0;
+                      width: 0;
+                    }
+                    .css-1xzxck5
+                      input[type="radio"].lp-form-react-radio:focus
+                      + label:hover
+                      .lp-form-react-radio-button
+                      .lp-form-react-radio-button__checked {
+                      opacity: 0.6;
+                    }
+                    .css-1xzxck5
+                      input[type="radio"].lp-form-react-radio
+                      + label {
+                      cursor: pointer;
+                    }
+                    .css-1xzxck5
+                      input[type="radio"].lp-form-react-radio
+                      + label
+                      .lp-form-react-radio-button {
+                      display: inline-block;
+                      position: relative;
+                      width: 16px;
+                      height: 16px;
+                      vertical-align: middle;
+                      margin: 0 6px 0 0;
+                      cursor: pointer;
+                    }
+                    .css-1xzxck5
+                      input[type="radio"].lp-form-react-radio
+                      + label
+                      .lp-form-react-radio-button
+                      .lp-form-react-radio-button__unchecked,
+                    .css-1xzxck5
+                      input[type="radio"].lp-form-react-radio
+                      + label
+                      .lp-form-react-radio-button
+                      .lp-form-react-radio-button__checked {
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      width: 16px;
+                      height: 16px;
+                      -webkit-transition: opacity 0.3s ease;
+                      transition: opacity 0.3s ease;
+                    }
+                    .css-1xzxck5
+                      input[type="radio"].lp-form-react-radio
+                      + label
+                      .lp-form-react-radio-button
+                      .lp-form-react-radio-button__unchecked
+                      path,
+                    .css-1xzxck5
+                      input[type="radio"].lp-form-react-radio
+                      + label
+                      .lp-form-react-radio-button
+                      .lp-form-react-radio-button__checked
+                      path {
+                      fill: #4c515d;
+                    }
+                    .css-1xzxck5
+                      input[type="radio"].lp-form-react-radio
+                      + label
+                      .lp-form-react-radio-button
+                      .lp-form-react-radio-button__unchecked {
+                      z-index: 1;
+                      opacity: 1;
+                    }
+                    .css-1xzxck5
+                      input[type="radio"].lp-form-react-radio
+                      + label
+                      .lp-form-react-radio-button
+                      .lp-form-react-radio-button__checked {
+                      z-index: 0;
+                      opacity: 0;
+                    }
+                    .css-1xzxck5
+                      input[type="radio"].lp-form-react-radio
+                      + label:hover
+                      .lp-form-react-radio-button
+                      .lp-form-react-radio-button__checked {
+                      opacity: 0.6;
+                    }
+                    .css-1xzxck5
+                      input[type="radio"].lp-form-react-radio:checked
+                      + label
+                      .lp-form-react-radio-button
+                      .lp-form-react-radio-button__checked,
+                    .css-1xzxck5
+                      input[type="radio"].lp-form-react-radio:checked
+                      + label:hover
+                      .lp-form-react-radio-button
+                      .lp-form-react-radio-button__checked {
+                      opacity: 1;
+                    }
+                    .css-1xzxck5 input.lp-form-react-checkbox[type="checkbox"] {
+                      display: none;
+                    }
+                    .css-1xzxck5
+                      input.lp-form-react-checkbox[type="checkbox"]
+                      + label {
+                      cursor: pointer;
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-align-items: center;
+                      -webkit-box-align: center;
+                      -ms-flex-align: center;
+                      align-items: center;
+                    }
+                    .css-1xzxck5
+                      input.lp-form-react-checkbox[type="checkbox"]
+                      + label:hover
+                      span
+                      svg,
+                    .css-1xzxck5
+                      input.lp-form-react-checkbox[type="checkbox"]
+                      + label:focus
+                      span
+                      svg,
+                    .css-1xzxck5
+                      input.lp-form-react-checkbox[type="checkbox"]
+                      + label:active
+                      span
+                      svg {
+                      opacity: 1;
+                    }
+                    .css-1xzxck5
+                      input.lp-form-react-checkbox[type="checkbox"]
+                      + label
+                      .checkbox {
+                      height: 16px;
+                      margin: 0;
+                      -webkit-transition: background-color 0.3s ease,
+                        border-color 0.3s ease;
+                      transition: background-color 0.3s ease,
+                        border-color 0.3s ease;
+                    }
+                    .css-1xzxck5
+                      input.lp-form-react-checkbox[type="checkbox"]
+                      + label
+                      .checkbox
+                      .lp-form-react__checkbox-label-container {
+                      position: relative;
+                      width: 20px;
+                      height: 20px;
+                    }
+                    .css-1xzxck5
+                      input.lp-form-react-checkbox[type="checkbox"]
+                      + label
+                      .checkbox
+                      .checkbox__unchecked,
+                    .css-1xzxck5
+                      input.lp-form-react-checkbox[type="checkbox"]
+                      + label
+                      .checkbox
+                      .checkbox__checked {
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      width: 16px;
+                      height: 16px;
+                      -webkit-transition: opacity 0.3s ease;
+                      transition: opacity 0.3s ease;
+                    }
+                    .css-1xzxck5
+                      input.lp-form-react-checkbox[type="checkbox"]
+                      + label
+                      .checkbox
+                      .checkbox__unchecked
+                      path,
+                    .css-1xzxck5
+                      input.lp-form-react-checkbox[type="checkbox"]
+                      + label
+                      .checkbox
+                      .checkbox__checked
+                      path {
+                      fill: #4c515d;
+                    }
+                    .css-1xzxck5
+                      input.lp-form-react-checkbox[type="checkbox"]
+                      + label
+                      .checkbox
+                      .checkbox__unchecked {
+                      z-index: 1;
+                      opacity: 1;
+                    }
+                    .css-1xzxck5
+                      input.lp-form-react-checkbox[type="checkbox"]
+                      + label
+                      .checkbox
+                      .checkbox__checked {
+                      z-index: 0;
+                      opacity: 0;
+                    }
+                    .css-1xzxck5
+                      input.lp-form-react-checkbox[type="checkbox"]:checked
+                      + label
+                      .checkbox
+                      .checkbox__checked,
+                    .css-1xzxck5
+                      input.lp-form-react-checkbox[type="checkbox"]:checked
+                      + label:hover
+                      .checkbox
+                      .checkbox__checked {
+                      opacity: 1;
+                    }
+                    @media (hover: hover) {
+                      .css-1xzxck5
+                        input.lp-form-react-checkbox[type="checkbox"]
+                        + label:hover
+                        .checkbox
+                        .checkbox__checked {
+                        opacity: 0.6;
+                      }
+                    }
+                    .css-1xzxck5 select.lp-form-react-select {
+                      height: 2em;
+                      display: -webkit-box;
+                      display: -webkit-flex;
+                      display: -ms-flexbox;
+                      display: flex;
+                      -webkit-flex: 0 0 100%;
+                      -ms-flex: 0 0 100%;
+                      flex: 0 0 100%;
+                      padding: 0;
+                      background-color: #fff;
+                    }
+                    .css-1xzxck5 .flex-container {
+                      margin-left: -12px;
+                      margin-right: -12px;
+                    }
+                    .css-1xzxck5 .flex.flex-form [class*="flex__item--"] {
+                      padding-left: 12px;
+                      padding-right: 12px;
+                    }
+                    .css-1xzxck5
+                      .labels-are-inside
+                      input::-webkit-input-placeholder {
+                      font-size: 1em;
+                      font-weight: inherit;
+                      opacity: 1;
+                    }
+                    .css-1xzxck5 .labels-are-inside input::-moz-placeholder {
+                      font-size: 1em;
+                      font-weight: inherit;
+                      opacity: 1;
+                    }
+                    .css-1xzxck5
+                      .labels-are-inside
+                      input:-ms-input-placeholder {
+                      font-size: 1em;
+                      font-weight: inherit;
+                      opacity: 1;
+                    }
+                    .css-1xzxck5 .labels-are-inside input::placeholder {
+                      font-size: 1em;
+                      font-weight: inherit;
+                      opacity: 1;
+                    }
+                    .css-1xzxck5
+                      .labels-are-inside
+                      textarea::-webkit-input-placeholder {
+                      font-size: 1em;
+                      font-weight: inherit;
+                      opacity: 1;
+                    }
+                    .css-1xzxck5 .labels-are-inside textarea::-moz-placeholder {
+                      font-size: 1em;
+                      font-weight: inherit;
+                      opacity: 1;
+                    }
+                    .css-1xzxck5
+                      .labels-are-inside
+                      textarea:-ms-input-placeholder {
+                      font-size: 1em;
+                      font-weight: inherit;
+                      opacity: 1;
+                    }
+                    .css-1xzxck5 .labels-are-inside textarea::placeholder {
+                      font-size: 1em;
+                      font-weight: inherit;
+                      opacity: 1;
+                    }
+                    .css-1xzxck5
+                      input.lp-form-react__input::-webkit-input-placeholder {
+                      font-size: 1em;
+                    }
+                    .css-1xzxck5 input.lp-form-react__input::-moz-placeholder {
+                      font-size: 1em;
+                    }
+                    .css-1xzxck5
+                      input.lp-form-react__input:-ms-input-placeholder {
+                      font-size: 1em;
+                    }
+                    .css-1xzxck5
+                      input.lp-form-react__input::-webkit-input-placeholder {
+                      font-size: 1em;
+                    }
+                    .css-1xzxck5 input.lp-form-react__input::-moz-placeholder {
+                      font-size: 1em;
+                    }
+                    .css-1xzxck5
+                      input.lp-form-react__input:-ms-input-placeholder {
+                      font-size: 1em;
+                    }
+                    .css-1xzxck5 input.lp-form-react__input::placeholder {
+                      font-size: 1em;
+                    }
+                    .css-1xzxck5
+                      textarea.lp-form-react__textarea::-webkit-input-placeholder {
+                      font-size: 1em;
+                    }
+                    .css-1xzxck5
+                      textarea.lp-form-react__textarea::-moz-placeholder {
+                      font-size: 1em;
+                    }
+                    .css-1xzxck5
+                      textarea.lp-form-react__textarea:-ms-input-placeholder {
+                      font-size: 1em;
+                    }
+                    .css-1xzxck5
+                      textarea.lp-form-react__textarea::-webkit-input-placeholder {
+                      font-size: 1em;
+                    }
+                    .css-1xzxck5
+                      textarea.lp-form-react__textarea::-moz-placeholder {
+                      font-size: 1em;
+                    }
+                    .css-1xzxck5
+                      textarea.lp-form-react__textarea:-ms-input-placeholder {
+                      font-size: 1em;
+                    }
+                    .css-1xzxck5 textarea.lp-form-react__textarea::placeholder {
+                      font-size: 1em;
+                    }
+                    .css-1xzxck5 .lp-form-react__input {
+                      border: 1px solid rgba(76, 81, 93, 1);
+                      color: #020020;
+                      font-size: inherit;
+                    }
+                    .css-1xzxck5 .lp-form-react__input:focus {
+                      border: 1px solid rgba(76, 81, 93, 1);
+                      box-shadow: rgba(76, 81, 93, 1) 0 0 1.5px 1px;
+                      outline: 0;
+                    }
+                    .css-1xzxck5
+                      .lp-form-react__input::-webkit-input-placeholder {
+                      color: #b1bacc;
+                    }
+                    .css-1xzxck5 .lp-form-react__input::-moz-placeholder {
+                      color: #b1bacc;
+                    }
+                    .css-1xzxck5 .lp-form-react__input:-ms-input-placeholder {
+                      color: #b1bacc;
+                    }
+                    .css-1xzxck5 .lp-form-react__input::placeholder {
+                      color: #b1bacc;
+                    }
+                    .css-1xzxck5 .lp-form-react__label {
+                      color: rgba(76, 81, 93, 1);
+                      font-family: Lato;
+                    }
+                    .css-1xzxck5 .labels-are-inside .lp-form-react__input {
+                      color: #020020;
+                    }
+                    .css-1xzxck5
+                      .labels-are-inside
+                      .lp-form-react__input::-webkit-input-placeholder {
+                      color: rgba(76, 81, 93, 1);
+                      font-family: Lato;
+                    }
+                    .css-1xzxck5
+                      .labels-are-inside
+                      .lp-form-react__input::-moz-placeholder {
+                      color: rgba(76, 81, 93, 1);
+                      font-family: Lato;
+                    }
+                    .css-1xzxck5
+                      .labels-are-inside
+                      .lp-form-react__input:-ms-input-placeholder {
+                      color: rgba(76, 81, 93, 1);
+                      font-family: Lato;
+                    }
+                    .css-1xzxck5
+                      .labels-are-inside
+                      .lp-form-react__input::placeholder {
+                      color: rgba(76, 81, 93, 1);
+                      font-family: Lato;
+                    }
+                    .css-1xzxck5 .lp-form-react-radio {
+                      font-family: Lato;
+                    }
+                    .css-1xzxck5 .lp-form-react-radio + label {
+                      color: rgba(76, 81, 93, 1);
+                      font-family: Lato;
+                    }
+                    .css-1xzxck5
+                      .lp-form-react-radio
+                      + label
+                      .lp-form-react-radio-button__unchecked
+                      path,
+                    .css-1xzxck5
+                      .lp-form-react-radio
+                      + label
+                      .lp-form-react-radio-button__checked
+                      path {
+                      fill: rgba(76, 81, 93, 1);
+                    }
+                    .css-1xzxck5 .lp-form-field__field-block-title {
+                      font-family: Lato;
+                      color: rgba(76, 81, 93, 1);
+                    }
+                    .css-1xzxck5 select.lp-form-react-select {
+                      border: 1px solid rgba(76, 81, 93, 1);
+                      font-family: Lato;
+                    }
+                    .css-1xzxck5 select.lp-form-react-select:focus {
+                      outline-color: rgba(76, 81, 93, 1);
+                    }
+                    .css-1xzxck5 .lp-form-react__select-option {
+                      font-family: Lato;
+                    }
+                    .css-1xzxck5
+                      input.lp-form-react-checkbox[type="checkbox"]
+                      + label {
+                      color: rgba(76, 81, 93, 1);
+                      font-family: Lato;
+                    }
+                    .css-1xzxck5
+                      input.lp-form-react-checkbox[type="checkbox"]
+                      + label
+                      .checkbox__unchecked
+                      path,
+                    .css-1xzxck5
+                      input.lp-form-react-checkbox[type="checkbox"]
+                      + label
+                      .checkbox__checked
+                      path {
+                      fill: rgba(76, 81, 93, 1);
+                    }
+                    .css-1xzxck5 .lp-form-react__description {
+                      color: rgba(76, 81, 93, 1);
+                      font-family: Lato;
+                      font-size: 0.875rem;
+                    }
+                    .css-1xzxck5 .lp-form-react__privacy-link {
+                      color: rgba(76, 81, 93, 1);
+                      -webkit-text-decoration: underline;
+                      text-decoration: underline;
+                      padding: 10px 0;
+                    }
+                    .css-1xzxck5 .lp-form-react__privacy-link a {
+                      color: inherit;
+                    }
+                    .css-1xzxck5 .lp-form-react__confirm label {
+                      font-size: 0.875rem;
+                    }
+                  </style>
+                  
+                  <div
+                    class="lp-form-react w-406c2845-cebe-0298-9b52-3fab2a01f711 css-1xzxck5"
+                    data-widget-type="LpInputReact"
+                  >
+                    <div class="error-prompt error-prompt--disabled">
+                      <div class="error-prompt__icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 48 30"
+                          class="disabled-checkout"
+                        >
+                          <path
+                            style="fill: #656a78"
+                            d="M36.8 1h-30c-1.7 0-3 1.3-3 3v20c0 1.7 1.3 3 3 3h24.8c-0.1-0.1-0.1-0.1-0.2-0.2 -0.6-0.6-1-1.2-1.4-1.8H6.8c-0.5 0-1-0.5-1-1V12h32v2.1c0.7 0.1 1.4 0.3 2 0.6V4C39.8 2.3 38.5 1 36.8 1zM37.8 6h-32V4c0-0.5 0.5-1 1-1h30c0.5 0 1 0.5 1 1V6z"
+                          ></path>
+                          <path
+                            style="fill: #fa5a6a"
+                            d="M36.7 14c2.1 0 3.8 0.7 5.3 2.2s2.2 3.2 2.2 5.3 -0.7 3.8-2.2 5.3S38.8 29 36.7 29s-3.8-0.7-5.3-2.2c-1.5-1.5-2.2-3.2-2.2-5.3s0.7-3.8 2.2-5.3C32.9 14.7 34.6 14 36.7 14zM37.4 22.2v-4.5h-1.5v4.5H37.4zM37.4 25.3v-1.5h-1.5v1.5H37.4z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div class="error-prompt__details">
+                        <p class="error-title"></p>
+                        <p class="error-description"></p>
+                      </div>
+                    </div>
+                    <div class="error-prompt error-prompt--invalid">
+                      <div class="error-prompt__icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 100 100"
+                          class="error-line"
+                        >
+                          <g data-name="Layer 2">
+                            <g data-name="Layer 1">
+                              <path
+                                d="M50 10a39.9 39.9 0 0 1 15.3 2.9 40.1 40.1 0 0 1 12.9 8.8 40.1 40.1 0 0 1 8.8 12.9A39.7 39.7 0 0 1 90 50a39.9 39.9 0 0 1-2.9 15.3 40.2 40.2 0 0 1-8.8 12.9 40.3 40.3 0 0 1-13 8.8A39.6 39.6 0 0 1 50 90a39.9 39.9 0 0 1-15.3-2.9 39.8 39.8 0 0 1-12.9-8.8 40.4 40.4 0 0 1-8.8-12.9A39.6 39.6 0 0 1 10 50a40 40 0 0 1 2.9-15.3 39.8 39.8 0 0 1 8.8-12.9 40.1 40.1 0 0 1 12.9-8.8A39.8 39.8 0 0 1 50 10ZM50 0A48.4 48.4 0 0 0 14.7 14.7 48.4 48.4 0 0 0 0 50 48.4 48.4 0 0 0 14.7 85.3 48.3 48.3 0 0 0 50 100 48.4 48.4 0 0 0 85.3 85.3 48.3 48.3 0 0 0 100 50 48.4 48.4 0 0 0 85.3 14.7 48.3 48.3 0 0 0 50 0h0Z"
+                              ></path>
+                              <path
+                                d="M55 55V24.8H45V55Zm0 20.3V65.1H45V75.3Z"
+                              ></path>
+                            </g>
+                          </g>
+                        </svg>
+                      </div>
+                      <div class="error-prompt__details">
+                        <p class="error-description"></p>
+                      </div>
+                    </div>
+                    <div
+                      data-input-container="true"
+                      class="form-field font-scale-4"
+                    >
+                      <div
+                        class="lp-form-react__group js-form-group"
+                        id="Name-Block"
+                      >
+                        <label for="Name" class="lp-form-react__label"
+                          ><span>Name</span
+                          ><input
+                            type="text"
+                            autocomplete="given-name"
+                            class="lp-form-react__input js-input-mapping"
+                            id="input-Name"
+                            style="font-family: Lato"
+                            data-url=""
+                            maxlength="500"
+                            placeholder="Name"
+                            name="input-Name"
+                            required=""
+                            value="" /></label
+                        ><label
+                          for="Name"
+                          class="lp-form-react__error lp-form-react__error--required"
+                          ><i class="fa fa-exclamation-circle"></i
+                          ><span>Please enter your Name</span></label
+                        ><label
+                          for="Name"
+                          class="lp-form-react__error lp-form-react__error--invalid"
+                          ><i class="fa fa-exclamation-circle"></i
+                          ><span>Please enter a valid Name</span></label
+                        >
+                      </div>
+                    </div>
+                    <div
+                      data-input-container="true"
+                      class="form-field font-scale-4"
+                    >
+                      <div
+                        class="lp-form-react__group js-form-group"
+                        id="Phone-Block"
+                      >
+                        <div class="flex-container">
+                          <div class="flex flex-form flex--12">
+                            <div class="flex__item--xs-12">
+                              <label
+                                for="cc5e02aa1d7740abc3a88f85ac0fb0c5-p65ZzSydG9jKNmj4eF8a4A"
+                                class="lp-form-react__label"
+                                ><span>Phone Number</span
+                                ><input
+                                  type="tel"
+                                  autocomplete="tel"
+                                  class="lp-form-react__input js-input-mapping"
+                                  id="input-PhoneNo"
+                                  style="font-family: Lato"
+                                  data-url=""
+                                  maxlength="35"
+                                  placeholder="Phone Number"
+                                  name="input-PhoneNo"
+                                  required=""
+                                  value="" /></label
+                              ><label
+                                for=""
+                                class="lp-form-react__error lp-form-react__error--required"
+                                ><i class="fa fa-exclamation-circle"></i
+                                ><span
+                                  >Please enter your Phone Number</span
+                                ></label
+                              ><label
+                                for=""
+                                class="lp-form-react__error lp-form-react__error--invalid"
+                                ><i class="fa fa-exclamation-circle"></i
+                                ><span
+                                  >Please enter a valid Phone Number</span
+                                ></label
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      data-input-container="true"
+                      class="form-field font-scale-4 input-hidden"
+                    >
+                      <div
+                        class="lp-form-react__group js-form-group"
+                        id="input-09be2ce7826f29ca5999b04a6caeebe9-p65ZzSydG9jKNmj4eF8a4A"
+                      >
+                        <label class="lp-form-react__label"
+                          ><span>action</span
+                          ><textarea
+                            class="lp-form-react__input lp-form-react__textarea js-input-mapping"
+                            id="TypeRequest"
+                            style="font-family: Lato"
+                            data-url=""
+                            rows="4"
+                            placeholder=""
+                            name="TypeRequest"
+                            value="LeadPartnerForm"
+                          >
+LeadPartnerForm</textarea
+                          ></label
+                        ><label
+                          for=""
+                          class="lp-form-react__error lp-form-react__error--required"
+                          ><i class="fa fa-exclamation-circle"></i
+                          ><span>Please enter your action</span></label
+                        >
+                      </div>
+                    </div>
+                    <div class="confirm-existence">
+                      <label
+                        class="confirm-existence__label"
+                        for="confirm-existence"
+                        >If you are human, leave this blank.<input
+                          type="text"
+                          class="confirm-existence__input"
+                          name="confirm-existence"
+                      /></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="widget-row flex flex--12">
+              <div class="flex__item--md-12 flex__item--xs-12">
+                <div
+                  data-widget-id="ffad907a-5316-436f-a913-cf01bc87dbbc"
+                  class="widget"
+                >
+                  <div
+                    class="lp-button-react-wrapper css-1yltisf"
+                    data-widget-type="LpButtonReact"
+                  >
+                    <style data-emotion-css="1idrav">
+                      .css-1idrav {
+                        display: inline-block;
+                        border-style: solid;
+                        border-width: 1px;
+                        text-align: center;
+                        font-family: "Lato", sans-serif;
+                        text-shadow: none;
+                        -webkit-transition: color 0.2s linear,
+                          background 0.2s linear, border-color 0.2s linear,
+                          text-shadow 0.2s linear;
+                        transition: color 0.2s linear, background 0.2s linear,
+                          border-color 0.2s linear, text-shadow 0.2s linear;
+                        -webkit-text-decoration: none;
+                        text-decoration: none;
+                        width: 100%;
+                        font-weight: bold;
+                        padding: 12px;
+                        font-family: Lato;
+                        border-radius: 10000px;
+                      }
+                      .css-1idrav::before {
+                        border-radius: 10000px;
+                      }
+                      .css-1idrav,
+                      .css-1idrav:focus,
+                      .css-1idrav:active {
+                        border-color: rgb(237, 31, 36);
+                        background: rgb(237, 31, 36);
+                        color: rgba(255, 255, 255, 1);
+                      }
+                      .css-1idrav:hover {
+                        background-color: rgb(186, 24, 28);
+                        border-color: rgb(186, 24, 28);
+                        color: rgba(255, 255, 255, 1);
+                      }
+                      .css-disabledbtn {
+                        display: inline-block;
+                        border-style: solid;
+                        border-width: 1px;
+                        text-align: center;
+                        font-family: "Lato", sans-serif;
+                        text-shadow: none;
+                        width: 100%;
+                        font-weight: bold;
+                        padding: 12px;
+                        font-family: Lato;
+                        border-radius: 10000px;
+                      }
+                      .css-disabledbtn::before {
+                        border-radius: 10000px;
+                      }
+                      .css-disabledbtn,
+                      .css-disabledbtn:focus,
+                      .css-disabledbtn:active {
+                        border-color: rgb(200, 200, 200);
+                        background: rgb(200, 200, 200);
+                        color: rgba(50, 50, 50, 1);
+                      }
+                      .css-disabledbtn:hover {
+                        background-color: rgb(200, 200, 200);
+                        border-color: rgb(200, 200, 200);
+                        color: rgba(50, 50, 50, 1);
+                      }
+                    </style>
+
+                    <!--Extra-->
+                    <div
+                      id="was"
+                      style="
+                        display: block;
+                        float: left;
+                        text-align: left;
+                        margin-bottom: 14px;
+                        color: gray;
+                      "
+                    >
+                      <p
+                        style="
+                          text-align: left;
+                          font-size: 14px;
+                          color: gray;
+                          font-weight: 600;
+                        "
+                      >
+                        We will contact you from time to time to give you
+                        updated information on products, investment options via
+                        WhatsApp, Email, SMS, phone..
+                      </p>
+
+                      <input
+                        type="radio"
+                        id="readytooptin"
+                        name="consentform"
+                        checked
+                        style="margin-top: 10px; margin-left: 25px"
+                      />
+                      <label style="font-size: 13.5px" for="readytooptin"
+                        >Yes, I would like keep myself updated</label
+                      >
+
+                      <br />
+                      <input
+                        type="radio"
+                        id="notreadytooptin"
+                        name="consentform"
+                        style="margin-top: 10px; margin-left: 25px"
+                      />
+                      <label style="font-size: 13.5px" for="notreadytooptin"
+                        >No, I prefer to remain ignorant of new updates.</label
+                      >
+                    </div>
+
+                    <!--ENdof-->
+                    <!--form-->
+
+                    <input
+                      id="grow-income"
+                      name="grow-income"
+                      value="JOIN NIVESH"
+                      type="button"
+                      class="lp-button-react w-ffad907a-5316-436f-a913-cf01bc87dbbc lp-button-react--full is-bold lp-button-react--small lp-button-react--flat lp-btn-flat font-scale-5 line-height-scale-4 css-1idrav"
+                      formtarget="_top"
+                      onclick="formSubmit(event)"
+                    />
+                    <!--I Want to Increase My Profit Now!</button>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="form-errors"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+  function formSubmit(e) {
+    e.preventDefault(); //This will prevent the default click action.
+    console.log("button clicked");
+
+    var iserror = 0;
+
+    var params = new URLSearchParams(window.location.search);
+    var element = document.getElementById("grow-income");
+    element.value = "Processing...";
+    element.disabled = true;
+
+    element.classList.remove("css-1idrav");
+    element.classList.add("css-disabledbtn");
+    element.style.webkitTransform = element.style.webkitTransform;
+
+    $("div.js-required").removeClass("js-required");
+    var name = $("#input-Name").val();
+    if (name == "") {
+      $("#Name-Block").addClass("js-required");
+
+      $("#input-Name").focus();
+      iserror = 1;
+    }
+
+    var phoneno = $("#input-PhoneNo").val();
+    var re = /^\d{10}$/;
+    if (phoneno == "" || !re.test(phoneno)) {
+      $("#Phone-Block").addClass("js-required");
+
+      $("#input-PhoneNo").focus();
+      iserror = 1;
+    }
+
+    var typerequest = $("#TypeRequest").val();
+    //https://nivesh.lpages.co/partner-prp-awr/?utm_source=Facebook&utm_medium=Facebook&utm_campaign=Partner-PRP-AMFI-AWR_80&utm_content=Partner-PRP-AMFI
+    if (!params.get("utm_campaign")) {
+      typerequest = typerequest;
+    } else {
+      typerequest =
+        typerequest +
+        "|" +
+        params.get("utm_campaign") +
+        "|" +
+        params.get("utm_content") +
+        "|" +
+        params.get("utm_medium") +
+        "|" +
+        params.get("utm_source");
+    }
+
+    if (iserror == 1) {
+      //$('#grow-income').prop("disabled", false);
+      //$('#grow-income').addClass('css-1idrav');
+      element.classList.remove("css-disabledbtn");
+      element.classList.add("css-1idrav");
+      element.value = "Fill the form";
+      element.disabled = false;
+      return false;
+    }
+    $("#grow-income").disabled = true;
+    element.value = "Please Wait";
+
+    //CaptureConsentForm
+    let userReadyToOptinResponse = 1;
+    const readyToOptin = document.getElementById("readytooptin");
+
+    if (readyToOptin.checked === false) {
+      userReadyToOptinResponse = 0;
+    }
+
+    var jsonData = {};
+    jsonData["Name"] = name;
+    jsonData["Email"] = "";
+    jsonData["PhoneNo"] = phoneno;
+    jsonData["Message"] = "";
+    jsonData["IsDistributor"] = 1;
+    jsonData["TypeRequest"] =
+      typerequest +
+      "|" +
+      "NEW-MODEL-Video-SAFAL-ARN-Campaign" +
+      "|" +
+      "IsARNHolder:1" +
+      "|" +
+      "ConsentByUser:" +
+      userReadyToOptinResponse;
+
+    var settings = {
+      url: "https://api.ipify.org/",
+      method: "GET",
+    };
+
+    $.ajax(settings).done(function (response) {
+      console.log(response);
+      jsonData["IPAddress"] = response;
+    });
+
+    data = JSON.stringify(jsonData);
+
+    //SendWelcomeMail(emailid)
+
+    $.ajax({
+      type: "POST",
+      url: "https://api.nivesh.com/api/webaddlead",
+      data: data,
+      processData: false,
+      contentType: "application/json",
+      success: function () {
+        element.value = "Thank you!";
+        element.style.webkitTransform = element.style.webkitTransform;
+        //$('#grow-income').text("Thank You");
+        //$('#grow-income').prop("disabled", false);
+
+        fbq("track", "Lead");
+        var t = new Date().getTime();
+        while (new Date().getTime() < t + 2000);
+        window.location.assign(
+          "https://app.nivesh.com/partner_onboarding/sign_in?MobileNo=" +
+            phoneno +
+            "&RoleId=3"
+        );
+        //window.location.assign("https://lead.nivesh.com/thank-you-nivesh");
+        //window.location.href = "https://app.nivesh.com/thank-you";
+      },
+      error: function () {
+        //alert('There was an error submitting the form');
+        element.classList.remove("css-disabledbtn");
+        element.classList.add("css-1idrav");
+        element.disabled = false;
+        //window.location.assign("https://app.nivesh.com/thank-you");
+        //return false;
+      },
+      async: true,
+    });
+
+    //return false; // Returning false will stop page from reloading.
+  }
+</script>
